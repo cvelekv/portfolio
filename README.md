@@ -160,7 +160,7 @@ p3 { text-shadow: 1px 2px 6px #527a7a; }
   </header>
 </nav>
 
-<div class="container main text-center animated fadeIn">
+<div class="container main text-center animated fadeIn" id="home">
   <!-- start of all pages -->
 
   <!-- page one -->
