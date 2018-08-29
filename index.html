@@ -138,7 +138,7 @@ p3 { text-shadow: 1px 2px 6px #527a7a; }
     <ul class="nav nav-pills">
       <li class="pull-left">
         <a href="#home">
-          <p1><i class="fa fa-home" aria-hidden="true"></i></p1>
+          <p1><i class="fa fa-home"></i></p1>
         </a>
       </li>
       <li class="pull-right">
