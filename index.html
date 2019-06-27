@@ -2,258 +2,388 @@
 <html>
 
 <head>
-  <title>My Portfolio Website</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="icon" href="https://lh3.googleusercontent.com/-ljU6-zK0U-w/XEh0Zg9rW8I/AAAAAAAAG_0/vmnrdHtgm9g9opaBMuqoPf0WLNedQxLhQCJoC/w530-h530-n/favicon.png" type="image/x-icon">
+    <title>Nikola's Portfolio Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- favicons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicons end -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"
+        integrity="sha256-39jKbsb/ty7s7+4WzbtELS4vq9udJ+MDjGTD5mtxHZ0=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-responsive-style.css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script/all-plugins.js"></script>
+    <script type="text/javascript" src="script/plugin-active.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.js"
+        integrity="sha256-P4SJfYhPR/nJixZWliR5tB/emZNOajq66BKJlbfYH3s=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.1/jquery.fancybox.js"
+        integrity="sha256-g9CH7pfJ7ncmLwRCNDVwsEjDSv2ZlRVkE1ZGHXxI8VY=" crossorigin="anonymous"></script>
 </head>
-  
-<body>
-<style>
 
-@media only screen and (max-device-width: 400px) {  
-  #pg1, #pg2, #pg3, .main { padding: 8px; }
-  footer { text-shadow: 1px 1px 1px #85adad; }
-}
 
-html { scroll-behavior: smooth; }
+<body data-spy="scroll" data-target=".main-navigation" data-offset="150">
+    <section id="MainContainer">
 
-body {
-  background: url("https://i.pinimg.com/564x/c4/16/ce/c416cec658acbff32fb69f8c54791249.jpg");
-  font-family: "Lato", "Helvetica Neue";
-}
+        <!-- Header starts here -->
+        <header id="Header">
+            <nav class="main-navigation">
+                <div class="container clearfix">
+                    <div class="site-logo-wrap">
+                        <a class="logo" href="#Home"><img src="images/my-logo.jpg" alt="My Logo"></a>
+                    </div>
+                    <a href="javascript:void(0)" class="menu-trigger hidden-lg-up"><span>&nbsp;</span></a>
+                    <div class="main-menu hidden-md-down">
+                        <ul class="menu-list">
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#Home">Home</a></li>
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#About">About</a></li>
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#Skills">Skills</a></li>
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#Portfolio">Portfolio</a>
+                            </li>
+                            <li><a class="nav-link" href="javascript:void(0)" data-target="#Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-menu hidden-lg-up">
+                    <ul class="mobile-menu-list">
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#Home">Home</a></li>
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#About">About</a></li>
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#Skills">Skills</a></li>
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#Portfolio">Portfolio</a></li>
+                        <li><a class="nav-link" href="javascript:void(0)" data-target="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Header end -->
 
-#aboutMe {
-  background-color: #d1e0e0;
-  font-size: 1.3em;
-  color: black;
-  text-shadow: 2px 2px 1px white;
-  box-shadow: 2px 4px 15px #85adad;
-  border-radius: 41px;
-  opacity: 0.7;
-  width: 96%;
-  margin-left: auto;
-  margin-right: auto;
-}
+        <!-- Banner starts here -->
+        <section id="Home">
+            <div class="hero-content">
+                <h1>Hi,&nbsp;i'm Nikola</h1>
+                <div class="mobile-div">
+                    <img class="mobile-pic" src="images/about-me-2.jpg" alt="my-img"><br><br>
+                </div>                
+                <p>Welcome to my portfolio website</p>
+                <a href="#About" class="hero-cta">About me</a>
+            </div>
+        </section>
+        <!-- Banner end -->
 
-.header {
-  background: url("https://i.pinimg.com/564x/04/75/5d/04755d0c63f26806b855bd42358df3bf.jpg");
-  box-shadow: 2px 4px 15px #85adad;
-  border-radius: 5px;
-  border-bottom: 2px solid #527a7a;
-}
+        <!-- About me section starts here -->
+        <section id="About">
+            <div class="container">
+                <div class="about-wrapper">
+                    <h2>About Me</h2>
+                    <br>
+                    <p>I am a young software developer, mostly skilled in Front-end technologies, but I also have some
+                        experience in Full-stack development.</p>
+                    <p>I love structure and order, and enjoy little details most people wouldn't notice. I also like
+                        working in a team, as you can learn more and faster.</p>
+                    <p>When it comes to problem solving, that's no problem for me, solution is often found right around
+                        the corner.</p>
+                    <br>
+                    <p>Find out more about me on my LinkedIn profile:</p>
+                    <a href="https://www.linkedin.com/in/nikola-djekic-a1134316a/" target="_blank"
+                        class="about-cta">Linked<i class="fab fa-linkedin" aria-hidden="true"
+                            style="margin-left:3px;"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- About me section end -->
 
-.pageOne, .pageTwo, .pageThree {
-  background-size: cover;
-  height: auto;
-  border: 1px solid silver;
-  padding: 31px;
-  border-radius: 11px;
-  margin-bottom: 15px;
-  box-shadow: 21px 5px 71px grey;
-}
+        <!-- Skills section starts here -->
+        <section id="Skills">
+            <div class="container">
+                <div class="block-heading">
+                    <h2>Skills</h2>
+                    <p>Skills are things you learn, that help you do other things. And here are mine:</p>
+                </div>
+                <div class="skills-wrapper">
+                    <div class="each-service">
+                        <div class="service-icon"><i class="fas fa-laptop" style="font-size:1.8em"
+                                aria-hidden="true"></i></div>
+                        <h5 class="service-title">FRONT-END</h5>
+                        <p class="service-description">Starting with basic <b>HTML</b> and <b>CSS</b>, using
+                            preprocessors like SASS and LESS, styling with Bootstrap and Material responsive design,
+                            spicing it up with <b>JavaScript</b> and JQuery.</p>
+                    </div>
+                    <div class="each-service">
+                        <div class="service-icon"><i class="fas fa-laptop-code" style="font-size:1.8em"
+                                aria-hidden="true"></i></div>
+                        <h5 class="service-title">FRAMEWORKS</h5>
+                        <p class="service-description">Mostly worked with <b>Angular 2+</b> versions, with a basic grasp
+                            of <b>ReactJS</b> Library and Angular Material.</p>
+                    </div>
+                    <div class="each-service">
+                        <div class="service-icon si-2"><i class="fas fa-server" style="font-size:2em"
+                                aria-hidden="true"></i></div>
+                        <h5 class="service-title">BACK-END</h5>
+                        <p class="service-description">Mainly <b>NodeJS (ExpressJS)</b>, since it's a beautiful way to
+                            use JS skills on the back-end, but also some basic knowledge of <b>Java</b> as well as
+                            <b>Spring</b> Framework.</p>
+                    </div>
+                    <div class="each-service">
+                        <div class="service-icon si-2"><i class="fas fa-database" style="font-size:2em"
+                                aria-hidden="true"></i></div>
+                        <h5 class="service-title">DATABASE</h5>
+                        <p class="service-description">Relational SQL, Oracle or Microsoft, and Non-Relational NoSQL,
+                            mostly <b>MongoDB</b> with Mongoose.</p>
+                    </div>
+                    <div class="each-service">
+                        <div class="service-icon si-2"><i class="fas fa-folder-plus" style="font-size:2em"
+                                aria-hidden="true"></i></div>
+                        <h5 class="service-title">ADDITIONAL SKILLS</h5>
+                        <p class="service-description">What I've encountered and worked with more or less so far: AJAX,
+                            TypeScript, JSP, JPA, Hibernate, C#, ASP.NET, MSSQL, Database modelling and normalization.
+                        </p>
+                    </div>
+                    <div class="each-service">
+                        <div class="service-icon si-2"><i class="fab fa-git-alt" style="font-size:2em"
+                                aria-hidden="true"></i></div>
+                        <h5 class="service-title">VERSION CONTROL</h5>
+                        <p class="service-description">Basic usage of <b>Git</b> version control either through CLI or
+                            VSCode directly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills section end -->
 
-.pageOne {
-  background: url("https://images.unsplash.com/photo-1474377207190-a7d8b3334068?dpr=1&auto=compress,format&fit=crop&w=1500&h=&q=80&cs=tinysrgb&crop=");
-  margin-top: 77px;
-  color: lavender;
-  text-shadow: 2px 2px 2px black;
-}
+        <!-- Portfolio section starts here -->
+        <section id="Portfolio">
+            <div class="container">
+                <div class="block-heading">
+                    <h2>Portfolio</h2>
+                    <p>A brief presentation of some minor practice projects.</p>
+                </div>
+                <div class="portfolio-wrapper clearfix">
+                    <a class="each-portfolio" data-fancybox="gallery" href="images/p-one.jpg">
+                        <div class="no-scale">
+                            <img src="images/p-one.jpg" alt="p-one">
+                        </div>
+                        <div class="hover-cont-wrap">
+                            <div class="hover-cont-block">
+                                <h5 class="p-title">Weather App</h5>
+                                <div class="p-desc">
+                                    <div>Displays current weather conditions based on user's geolocation.</div>
+                                    <div class="icon-div"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="each-portfolio" data-fancybox="gallery" href="images/p-two.jpg">
+                        <div class="no-scale">
+                            <img src="images/p-two.jpg" alt="p-one">
+                        </div>
+                        <div class="hover-cont-wrap">
+                            <div class="hover-cont-block">
+                                <h5 class="p-title">TicTacToe Game</h5>
+                                <div class="p-desc">
+                                    <div>A JQuery game that you can play in 2 players mode or vs.Computer
+                                    </div>
+                                    <div class="icon-div"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="each-portfolio" data-fancybox="gallery" href="images/p-six.jpg">
+                        <div class="no-scale">
+                            <img src="images/p-six.jpg" alt="p-one">
+                        </div>
+                        <div class="hover-cont-wrap">
+                            <div class="hover-cont-block">
+                                <h5 class="p-title">Tronald Dump</h5>
+                                <div class="p-desc">
+                                    <div>Implemented Tronald Dump API in Angular project, just for fun</div>
+                                    <div class="icon-div"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="each-portfolio" data-fancybox="gallery" href="images/p-three.jpg">
+                        <div class="no-scale">
+                            <img src="images/p-three.jpg" alt="p-one">
+                        </div>
+                        <div class="hover-cont-wrap">
+                            <div class="hover-cont-block">
+                                <h5 class="p-title">Simon Game</h5>
+                                <div class="p-desc">
+                                    <div>A classic Simon Says game with two game modes, normal and strict</div>
+                                    <div class="icon-div"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="each-portfolio" data-fancybox="gallery" href="images/p-four.jpg">
+                        <div class="no-scale">
+                            <img src="images/p-four.jpg" alt="p-one">
+                        </div>
+                        <div class="hover-cont-wrap">
+                            <div class="hover-cont-block">
+                                <h5 class="p-title">Wikipedia viewer</h5>
+                                <div class="p-desc">
+                                    <div>Makes use of the wikipedia API to search and display results.</div>
+                                    <div class="icon-div"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="each-portfolio" data-fancybox="gallery" href="images/p-five.jpg">
+                        <div class="no-scale">
+                            <img src="images/p-five.jpg" alt="p-one">
+                        </div>
+                        <div class="hover-cont-wrap">
+                            <div class="hover-cont-block">
+                                <h5 class="p-title">Pomodoro Clock</h5>
+                                <div class="p-desc">
+                                    <div>FreeCodeCamp project, focused on displaying elapsed time untill the break</div>
+                                    <div class="icon-div"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio section end -->
 
-.pageTwo {
-  background: url("https://i.pinimg.com/564x/d6/54/75/d6547570f7ce600c6bdbc0a6fb34f633.jpg");
-  padding-top: 12px;
-}
+        <section id="Testimonial">
+            <div class="testimonial-wrap">
+                <div class="container">
+                    <div class="block-heading">
+                        <h2>See all projects on</h2>
+                    </div>
+                    <ul class="testimonial-slider">
+                        <li>
+                            <h3>
+                                <a href="https://www.linkedin.com/in/nikola-djekic-a1134316a/" target="_blank"
+                                    style="color:inherit"> Linked<i class="fab fa-linkedin" aria-hidden="true"
+                                        style="margin-left:3px"></i>
+                                </a>
+                            </h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="https://github.com/nikoladjekic" target="_blank" style="color:inherit">
+                                    GitHub <i class="fab fa-github" aria-hidden="true" style="margin-left:3px"></i>
+                                </a>
+                            </h3>
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="https://codepen.io/nikoladjekic/" target="_blank" style="color:inherit">
+                                    CodePen <i class="fab fa-codepen" aria-hidden="true" style="margin-left:3px"></i>
+                                </a>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-.pageThree {
-  background: url("https://images.unsplash.com/photo-1494135820019-7afdee2d494f?dpr=1&auto=compress,format&fit=crop&w=1500&h=&q=80&cs=tinysrgb&crop=");
-  padding-top: 60px;
-  padding-bottom: 11px;
-}
+        <!-- Contact me section starts here -->
+        <section id="Contact">
+            <div class="container contact-container">
+                <h3 class="contact-title">Get In Touch</h3>
+                <div class="contact-outer-wrapper">
 
-h1 {
-  font-size: 4.3em;
-  margin-top: 7px;
-  padding: 20px;
-}
+                    <div class="address-block">
+                        <p class="add-title">Contact me on social media</p>
+                        <div class="c-detail">
+                            <span class="c-icon"><i class="fab fa-linkedin" aria-hidden="true"></i></span>
+                            <span class="c-info"><a href="https://www.linkedin.com/in/nikola-djekic-a1134316a/"
+                                    target="_blank">LinkedIn profile</a></span>
+                        </div>
+                        <div class="c-detail">
+                            <span class="c-icon"><i class="fab fa-github" aria-hidden="true"></i></span>
+                            <span class="c-info"><a href="https://github.com/nikoladjekic" target="_blank">GitHub
+                                    Page</a></span>
+                        </div>
+                        <div class="c-detail">
+                            <span class="c-icon"><i class="fab fa-codepen" aria-hidden="true"></i></span>
+                            <span class="c-info"><a href="https://codepen.io/nikoladjekic/" target="_blank">Codepen
+                                    profile</a></span>
+                        </div>
+                        <div class="c-detail">
+                            <span class="c-icon"><i class="fas fa-envelope" aria-hidden="true"></i></span>
+                            <span class="c-info">nikoladj.21@gmail.com</span>
+                        </div>
+                    </div>
 
-p2, p3, h4 {
-  font-size: 3.2em;
-  color: ghostwhite;
-  text-shadow: 1px 1px 1px #00e6e6;
-}
+                    <div class="form-wrap">
+                        <p class="add-title">Send me a message</p>
+                        <form action="mailto:nikoladj.21@gmail.com" method="POST" enctype="text/plain">
+                            <div class="fname floating-label">
+                                <input type="text" class="floating-input" name="full name" id="full-name-field" />
+                                <label for="full-name-field">Full Name</label>
+                            </div>
+                            <div class="email floating-label">
+                                <input type="email" class="floating-input" name="email" id="mail-field" />
+                                <label for="mail-field">Email</label>
+                            </div>
+                            <div class="contact floating-label">
+                                <input type="tel" class="floating-input" name="contact" id="contact-us-field" />
+                                <label for="contact-us-field">Contact</label>
+                            </div>
+                            <div class="company floating-label">
+                                <input type="text" class="floating-input" name="company" id="company-field" />
+                                <label for="company-field">Company</label>
+                            </div>
+                            <div class="user-msg floating-label">
+                                <textarea class="floating-input" name="user message" id="user-msg-field"></textarea>
+                                <label for="user-msg-field" class="msg-label">Your Message</label>
+                            </div>
+                            <div class="submit-btn">
+                                <button type="submit">Submit</button>
+                                <button type="reset">Reset</button>
+                            </div>
+                        </form>
+                    </div>
 
-p1 {
-  color: #006666;
-  font-size: 1.31em;
-  text-shadow: 1px 1px floralwhite;
-}
+                </div>
+            </div>
+        </section>
+        <!-- Contact me section end -->
 
-h2 { font-size: 2em; }
+        <!-- Footer section starts here -->
+        <footer id="Footer">
+            <div class="container">
+                <div class="social-share">
+                    <ul>
+                        <li><a href="https://github.com/nikoladjekic" target="_blank"><i class="fab fa-github"
+                                    aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/nikola-djekic-a1134316a/" target="_blank"><i
+                                    class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="https://codepen.io/nikoladjekic/" target="_blank"><i class="fab fa-codepen"
+                                    aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-logo-wrap">
+                    Nikola Djekic &copy; 2019 &nbsp;&nbsp;&nbsp; <img src="images/my-logo.jpg" alt="logo" width="40px">
+                    &nbsp;&nbsp;&nbsp; Design credits: <a href="https://www.position2.com/"
+                        target="_blank">Position2</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer section end -->
 
-h4 { font-size: 2.2em; }
-
-p3 { text-shadow: 1px 2px 6px #527a7a; }
-
-.btnList {
-  padding: 21px;
-  margin-bottom: 71px;
-}
-
-.btn-default {
-  background-color: #f2f2f2;
-  font-size: 1.7em;
-  margin: 3px;
-  opacity: 0.88;
-}
-
-.mailForm, .submitbtn {
-  background-color: ghostwhite;
-  border-radius: 7px;
-  opacity: 0.8;
-  box-shadow: 2px 2px 3px grey;
-}
-
-.mailForm {
-  font-size: 20px;
-  height: 37px;
-  width: 260px;
-  margin: 2px;
-  margin-top: 5px;
-}
-
-.submitbtn {
-  font-size: 18px;
-  height: 33px;
-  margin-top: 11px;
-}
-
-</style>
-
-<nav class="navbar navbar-fixed-top animated fadeInDown">
-  <header class="header">
-    <ul class="nav nav-pills">
-      <li class="pull-left">
-        <a href="#home">
-          <p1><i class="fa fa-home"></i></p1>
-        </a>
-      </li>
-      <li class="pull-right">
-        <a href="#pg3">
-          <p1>Contact</p1>
-        </a>
-      </li>
-      <li class="pull-right">
-        <a href="#pg2">
-          <p1>Portfolio</p1>
-        </a>
-      </li>
-      <li class="pull-right">
-        <a href="#aboutMe">
-          <p1>About me</p1>
-        </a>
-      </li>
-    </ul>
-  </header>
-</nav>
-
-<div class="container main text-center animated fadeIn" id="home">
-  <!-- start of all pages -->
-
-  <!-- page one -->
-  <div class="pageOne text-center" id="pg1">
-    <h1>Nikola Djekic</h1>
-    <img style="border-radius:50%; width:18em; border:1px solid lavender;" src="https://lh3.googleusercontent.com/-1AQiv-J_j3U/W4WGmG6qJsI/AAAAAAAAGvw/4SsAuyVRaxwUeltoR2ahhQZSAI2tu2ESACL0BGAs/w530-h530-n/Linked%2Bin%2Bsmall20180827_153048.jpg"></img>
-    <br><br>
-    <h2>Software Developer</h2>  
-    <br>
-    <div class="well" id="aboutMe">
-      <h3 style="text-decoration:underline;">About me:</h3>
-      <p>
-        Born and raised in Belgrade, I finished Electrotechnical Highschool „Nikola Tesla“, as a Telecommunications Technician. I started working right after Highschool, and after a few years on various types of jobs, travelling the world and finding myself,
-        I spent three years in Austria, where my application for Bachelor studies was accepted on „Johannes Kepler“ University in Linz, a nice and peacefull town in province of Upper Austria. As my studies were mainly about the bussiness side of things
-        and not really matching up to my expectations, I focused more on the technical side and practiced programming on my own. After a while, I finally made a hard decision to drop out of my studies in Linz and focus all my time and energy only on programming. 
-        Now I am back in Belgrade working as a software developer, doing what I love and trying to get better at it every day.
-      </p>
-    </div>
-    <br>
-  </div>
-  <!-- end of page one -->
-
-  <!-- page two -->
-  <div class="pageTwo" id="pg2">
-    <p2 style="text-decoration:underline;">PORTFOLIO</p2>
-    <br>
-    <br>
-    <div class="row">
-
-      <div class="col-lg-6 col-xs-12 text-center" id="porCube">
-        <h4>Pomodoro Clock</h4>
-        <p data-height="333" data-theme-id="1" data-slug-hash="KQMwvo" data-default-tab="result" data-user="nikoladjekic" data-pen-title="Pomodoro Clock - FreeCodeCamp" class="codepen">See the Pen <a href="https://codepen.io/nikoladjekic/pen/KQMwvo/">Pomodoro Clock - FreeCodeCamp</a> by Nikola (<a href="https://codepen.io/nikoladjekic">@nikoladjekic</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-        <a href="https://codepen.io/Nikilla/full/NapPXZ/" target="blank"></a>
-      </div>
-
-      <div class="col-lg-6 col-xs-12 text-center" id="porCube">
-        <h4>Local Weather App</h4>
-        <p data-height="333" data-theme-id="1" data-slug-hash="jazObE" data-default-tab="result" data-user="nikoladjekic" data-embed-version="2" data-pen-title="Local Weather App" class="codepen">See the Pen <a href="https://codepen.io/nikoladjekic/pen/jazObE/">Local Weather App</a> by Djeka (<a href="https://codepen.io/nikoladjekic">@nikoladjekic</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-        <a href="https://codepen.io/nikoladjekic/full/jazObE/" target="blank">          
-        </a>
-      </div>
-
-      <div class="col-lg-6 col-xs-12 text-center" id="porCube">
-        <h4>TicTacToe game</h4>
-        <p data-height="333" data-theme-id="1" data-slug-hash="gveejj" data-default-tab="result" data-user="nikoladjekic" data-pen-title="TicTacToe Game - JQuery" class="codepen">See the Pen <a href="https://codepen.io/nikoladjekic/pen/gveejj/">TicTacToe Game - JQuery</a> by Nikola (<a href="https://codepen.io/nikoladjekic">@nikoladjekic</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-      </div>
-
-      <div class="col-lg-6 col-xs-12 text-center" id="porCube">
-        <h4>Wikipedia search engine</h4>
-        <p data-height="333" data-theme-id="1" data-slug-hash="eyGmOW" data-default-tab="result" data-user="nikoladjekic" data-embed-version="2" data-pen-title="Wikipedia Viewer" class="codepen">See the Pen <a href="https://codepen.io/nikoladjekic/pen/eyGmOW/">Wikipedia Viewer</a> by Djeka (<a href="https://codepen.io/nikoladjekic">@nikoladjekic</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-        <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-      </div>
-
-    </div>
-    <br>
-    <a style="color:#ccffff; text-shadow: 1px 1px 1px black;" href="https://codepen.io/nikoladjekic/pens/popular/#" target="_blank">Click here to see more projects</a>
-  </div>
-  <!-- end of page two -->
-
-  <!-- page three -->
-  <div class="pageThree text-center" id="pg3">
-    <p3>Find me on social media</p3>
-    <div class="btnList">
-      
-      <a class="btn btn-default" href="https://www.github.com/nikoladjekic" target="_blank"><i class="fab fa-github-square fa-lg"></i> GitHub</a>
-
-      <a class="btn btn-default" href="https://www.linkedin.com/in/nikola-djekic-a1134316a/" target="_blank"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a>
-
-      <a class="btn btn-default" href="https://codepen.io/nikoladjekic/#" target="_blank"><i class="fab fa-codepen fa-lg"></i> CodePen</a>
-    </div>
-
-    <div>
-      <p3>or e-mail me below</p3>
-      <form action="mailto:nikoladj.21@gmail.com" method="post" enctype="text/plain">
-        <input class="mailForm" type="text" placeholder="*Name" name="name" required><br>
-        <input class="mailForm" type="text" placeholder="*E-Mail Address" name="mail" required><br>
-        <input class="mailForm" type="text" placeholder="*Comment" name="comment" required><br>
-        <input class="mailForm" type="text" placeholder="Phone"><br>
-        <input class="mailForm" type="text" placeholder="Website"><br>
-    </div>
-    <button class="submitbtn" type="submit"> Submit</i></button><br>
-
-    <!-- footer note -->
-    <br>
-    <br>
-    <br>
-    <footer class="text-center" style="font-size:1.1em">INFO: This Page was created and designed by <strong>Nikola Djekic</strong>, using HTML5 <i class="fab fa-html5 fa-lg"></i> and CSS3 <i class="fab fa-css3 fa-lg"></i>. &#169 2018.</footer>
-
-  </div> <!-- end of page three -->
-</div> <!-- end of container -->
+    </section>
 </body>
-</html>
 
+</html>
