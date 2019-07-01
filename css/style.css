@@ -1383,7 +1383,7 @@ li {
     padding: 0 15px
 }
 
-#Home .hero-content .mobile-pic { 
+#Home .hero-content .mobile-pic {
     width: 180px;
     border-radius: 50%;
     border: 2px solid rgba(59, 59, 75, 0.767);
@@ -1586,6 +1586,16 @@ li {
 #Portfolio .portfolio-wrapper .each-portfolio:hover .hover-cont-wrap .p-desc {
     top: 0;
     transition: top 0.3s ease-in-out
+}
+
+#Portfolio .live-demo {
+    text-align: center;
+    margin: auto;
+    padding-top: 15px;
+}
+
+#Portfolio .live-demo:hover {
+    color: #0098aa;    
 }
 
 .fancybox-toolbar button {
