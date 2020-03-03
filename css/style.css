@@ -1176,7 +1176,7 @@ li {
 }
 
 #Header.header-fixed .site-logo-wrap .logo img {
-    width: 70px;
+    width: 140px;
     transition: all 0.3s ease-in-out
 }
 
@@ -1212,7 +1212,7 @@ li {
 #Header .site-logo-wrap .logo img {
     display: inline-block;
     vertical-align: middle;
-    width: 80px
+    width: 140px
 }
 
 #Header .main-menu {
@@ -1398,7 +1398,7 @@ li {
 
 #Home .hero-content p {
     font-size: 28px;
-    color: #fff;
+    color: #0098aa94;
     margin: 0 0 30px
 }
 
@@ -1642,7 +1642,7 @@ li {
     position: absolute;
     top: 0;
     right: 0;
-    background: url(../images/about-me.jpg) no-repeat center / cover;
+    background: url(../images/about-me.png) no-repeat center / cover;
     width: 50%;
     height: 100%
 }
