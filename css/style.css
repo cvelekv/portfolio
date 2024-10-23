@@ -1884,3 +1884,16 @@ li {
 #Footer .social-share ul li a:hover {
     color: #0098aa
 }
+
+.company-info {
+    display:flex;
+    justify-content:space-evenly;
+    width:100%;
+    color: darkgray;
+}
+
+@media (max-width:992px) {
+    .company-info{
+        flex-direction: column;
+    }
+}
