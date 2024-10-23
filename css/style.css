@@ -1894,6 +1894,7 @@ li {
 
 @media (max-width:992px) {
     .company-info{
+        margin-top:24px;
         flex-direction: column;
     }
 }
